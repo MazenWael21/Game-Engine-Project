@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/GameEngineWithJava.iml" filepath="$PROJECT_DIR$/GameEngineWithJava.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameEngineWithJava.main.iml" filepath="$PROJECT_DIR$/.idea/modules/GameEngineWithJava.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/GameEngineWithJava.test.iml" filepath="$PROJECT_DIR$/.idea/modules/GameEngineWithJava.test.iml" />
+    </modules>
+  </component>
+</project>
