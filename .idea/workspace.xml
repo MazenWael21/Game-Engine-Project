@@ -4,7 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'.">
+    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'.">
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yaseen.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/KeyEvents/KeyListener.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/MouseEvents/MouseListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
@@ -65,14 +68,20 @@
     &quot;accountId&quot;: &quot;c70faa9f-26b5-4b98-b6e2-180c54cd2f02&quot;
   }
 }</component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.org.example.main.executor": "Run",
     "Gradle.Download Sources.executor": "Run",
+    "Gradle.GameEngineWithJava [:org.KeyEvents.KeyListener.main()].executor": "Run",
     "Gradle.GameEngineWithJava [:org.MainModule.Main.main()].executor": "Run",
+    "Gradle.GameEngineWithJava [:org.MainModule.Window.main()].executor": "Run",
     "Gradle.GameEngineWithJava.executor": "Run",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
     "git-widget-placeholder": "master",
     "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
@@ -82,9 +91,35 @@
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.org.MainModule.main">
+  <component name="RunManager" selected="Application.Window">
+    <configuration name="KeyListener" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.KeyEvents.KeyListener" />
+      <module name="GameEngineWithJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.KeyEvents.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.MainModule.Main" />
+      <module name="GameEngineWithJava.main" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="org.MainModule.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Window" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="org.MainModule.Window" />
       <module name="GameEngineWithJava.main" />
       <extension name="coverage">
         <pattern>
@@ -126,6 +161,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.GameEngineWithJava" />
+        <item itemvalue="Application.KeyListener" />
+        <item itemvalue="Application.Window" />
         <item itemvalue="Application.org.MainModule.main" />
         <item itemvalue="Application.main" />
       </list>
@@ -148,7 +185,15 @@
       <option name="project" value="LOCAL" />
       <updated>1724762202069</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'.">
+      <option name="closed" value="true" />
+      <created>1724772594657</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1724772594657</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -165,6 +210,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit." />
     <MESSAGE value="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'." />
+    <MESSAGE value="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'." />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'." />
   </component>
 </project>

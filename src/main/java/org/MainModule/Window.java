@@ -1,10 +1,14 @@
 package org.MainModule;
+
+import org.KeyEvents.KeyListener;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 
 import static java.sql.Types.NULL;
+import static org.MouseEvents.MouseListener.mouseEventsCallBacks;
 import static org.lwjgl.glfw.GLFW.*;
+
 import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
 import static org.lwjgl.opengl.GL11.glClear;
 import static org.lwjgl.opengl.GL11C.glClearColor;
@@ -15,7 +19,7 @@ public class Window {
     private static int windowWidth , windowHight;
     private final static  int  defaultWindowWidth = 800 , defaultWidowHight=600 ;
     private static String windowTitle;
-    private long glfwWindow ;
+    private long glfwWindowAdress;
     int swapInterval= 1;   // Enabling V-SYNC
 //singleton impelmentation.
 private  Window(){
@@ -68,6 +72,14 @@ private Window(int windowWidth,int windowHight){
         Window.windowTitle = windowTitle;
     }
 
+    public long getGlfwWindowAdress() {
+        return glfwWindowAdress;
+    }
+
+    public void setGlfwWindowAdress(long glfwWindowAdress) {
+        this.glfwWindowAdress = glfwWindowAdress;
+    }
+
     public static Window getWindowInstance(int windowWidth, int windowHight, String windowTitle) {
 
         if(window==null){
@@ -115,9 +127,18 @@ private Window(int windowWidth,int windowHight){
     public void runWindow() {
         System.out.println("LWGL Version:"+ Version.getVersion()+".");
         System.out.println("Window Title:" +" "+getWindowTitle());
+
+
         init();
         loop();
     }
+
+    private void terminatingWindow(){
+     glfwDestroyWindow(glfwWindowAdress);
+     glfwTerminate();
+     glfwSetErrorCallback(null).free();
+    }
+
     private void init(){
         //setup error call back.
         GLFWErrorCallback.createPrint(System.err).set();
@@ -131,31 +152,50 @@ private Window(int windowWidth,int windowHight){
         glfwWindowHint(GLFW_MAXIMIZED,GLFW_TRUE);
 
         //intializing window.
-       glfwWindow = glfwCreateWindow(this.windowWidth,this.windowWidth,this.windowTitle,NULL,NULL);
+       glfwWindowAdress = glfwCreateWindow(this.windowWidth,this.windowWidth,this.windowTitle,NULL,NULL);
 
-       if(glfwWindow==NULL){
+       if(glfwWindowAdress ==NULL){
            throw new IllegalStateException("FAILED TO CREATE GLFW WINDOW!");
        }
-        glfwMakeContextCurrent(glfwWindow);
+
+        mouseEventsCallBacks();//mouse Call Back it should be here a src code but I decide to put it as a sprite method just for more orgranization.
+         glfwSetKeyCallback(glfwWindowAdress,KeyListener::keyCallback);
+        glfwMakeContextCurrent(glfwWindowAdress);
         glfwSwapInterval(swapInterval);
         OpeningGlfwlWindow();
     }
 
     private void OpeningGlfwlWindow(){
-      glfwShowWindow(glfwWindow);
+      glfwShowWindow(glfwWindowAdress);
       GL.createCapabilities();
     }
 
 
+
     private void loop(){
-       while(!glfwWindowShouldClose(glfwWindow)){
+       while(!glfwWindowShouldClose(glfwWindowAdress)){
            glfwPollEvents();
            glClearColor(1.0f,0.0f,0.0f,1.0f);
            glClear(GL_COLOR_BUFFER_BIT);
-           glfwSwapBuffers(glfwWindow);
+           glfwSwapBuffers(glfwWindowAdress);
+
+           if(KeyListener.isKeyPressed(GLFW_KEY_SPACE)){
+               System.out.println("space pressed!!");
+           }
        }
+        terminatingWindow();
+    }
+
+    public static void main(String[] args) {
+        //testing the window and it's functionality.
+        System.out.println("Testing the GLFW Lib");
+        Window window = org.MainModule.Window.getWindowInstance("Title");
+        window.runWindow();
+
 
     }
+
+
 }
 
 
