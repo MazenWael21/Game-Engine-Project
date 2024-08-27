@@ -4,10 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.">
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Window.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/example/main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Main.java" afterDir="false" />
+    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'.">
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/MainModule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/MainModule/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +26,9 @@
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
+        <task path="$PROJECT_DIR$">
+          <activation />
+        </task>
         <projects_view>
           <tree_state>
             <expand>
@@ -46,27 +53,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "yaseenTarek26"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;yaseenTarek26&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/MazenWael21/Game-Engine-Project.git",
-    "accountId": "c70faa9f-26b5-4b98-b6e2-180c54cd2f02"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/MazenWael21/Game-Engine-Project.git&quot;,
+    &quot;accountId&quot;: &quot;c70faa9f-26b5-4b98-b6e2-180c54cd2f02&quot;
   }
-}]]></component>
+}</component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
     "Application.Main.executor": "Run",
     "Application.org.example.main.executor": "Run",
+    "Gradle.Download Sources.executor": "Run",
     "Gradle.GameEngineWithJava [:org.MainModule.Main.main()].executor": "Run",
-    "git-widget-placeholder": "master"
+    "Gradle.GameEngineWithJava.executor": "Run",
+    "git-widget-placeholder": "master",
+    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
   <component name="RunManager" selected="Application.org.MainModule.main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.MainModule.Main" />
@@ -88,8 +103,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="GameEngineWithJava" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list />
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Gradle.GameEngineWithJava" />
         <item itemvalue="Application.org.MainModule.main" />
         <item itemvalue="Application.main" />
       </list>
@@ -104,11 +140,31 @@
       <option name="project" value="LOCAL" />
       <updated>1724753928814</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'.">
+      <option name="closed" value="true" />
+      <created>1724762202069</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1724762202069</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="initial commit." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit." />
+    <MESSAGE value="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'." />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'." />
   </component>
 </project>
