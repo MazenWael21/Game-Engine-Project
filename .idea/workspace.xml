@@ -4,16 +4,17 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'.">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/yaseen.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/KeyEvents/KeyListener.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/org/MouseEvents/MouseListener.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/checksums/checksums.lock" afterDir="false" />
+    <list default="true" id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: created two classes KeyListener and MouseListener they both work fine the key listener only be tested at that time.&#10;&#10;&#10;2:04:20 AM: Executing ':org.MainModule.Window.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Window.main()&#10;Testing the GLFW Lib&#10;LWGL Version:3.3.4+7.&#10;Window Title: Title&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 7s&#10;2 actionable tasks: 2 executed&#10;2:04:27 AM: Execution finished ':org.MainModule.Window.main()'.">
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/Colors/Colors.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/LevelDeditorScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/LevelScene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Scene.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/org/util/Time.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/8.8/fileHashes/fileHashes.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/org/MainModule/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/org/KeyEvents/KeyListener.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/KeyEvents/KeyListener.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/org/MainModule/Window.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/org/MainModule/Window.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -71,21 +72,31 @@
   <component name="ProblemsViewState">
     <option name="selectedTabId" value="CurrentFile" />
   </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 3
+}</component>
+  <component name="ProjectId" id="2lSmQMe1ES5Jb3lnuYpANmDlJmK" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "Application.org.example.main.executor": "Run",
-    "Gradle.Download Sources.executor": "Run",
-    "Gradle.GameEngineWithJava [:org.KeyEvents.KeyListener.main()].executor": "Run",
-    "Gradle.GameEngineWithJava [:org.MainModule.Main.main()].executor": "Run",
-    "Gradle.GameEngineWithJava [:org.MainModule.Window.main()].executor": "Run",
-    "Gradle.GameEngineWithJava.executor": "Run",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master",
-    "settings.editor.selected.configurable": "editor.preferences.fonts.default"
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.org.example.main.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Download Sources.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameEngineWithJava [:org.KeyEvents.KeyListener.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameEngineWithJava [:org.MainModule.Main.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameEngineWithJava [:org.MainModule.Window.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.GameEngineWithJava.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;editor.preferences.fonts.default&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$" />
@@ -163,11 +174,11 @@
         <item itemvalue="Gradle.GameEngineWithJava" />
         <item itemvalue="Application.KeyListener" />
         <item itemvalue="Application.Window" />
-        <item itemvalue="Application.org.MainModule.main" />
         <item itemvalue="Application.main" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="project-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task id="LOCAL-00001" summary="initial commit.">
       <option name="closed" value="true" />
@@ -193,7 +204,22 @@
       <option name="project" value="LOCAL" />
       <updated>1724772594657</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="initial commit.&#10;-Report: created two classes KeyListener and MouseListener they both work fine the key listener only be tested at that time.&#10;&#10;&#10;2:04:20 AM: Executing ':org.MainModule.Window.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Window.main()&#10;Testing the GLFW Lib&#10;LWGL Version:3.3.4+7.&#10;Window Title: Title&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 7s&#10;2 actionable tasks: 2 executed&#10;2:04:27 AM: Execution finished ':org.MainModule.Window.main()'.">
+      <option name="closed" value="true" />
+      <created>1724800161692</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1724800161692</updated>
+    </task>
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="bc5b68c0-9b06-4f2a-9d2a-0602e178a782" name="Changes" comment="initial commit.&#10;-Report: created two classes KeyListener and MouseListener they both work fine the key listener only be tested at that time.&#10;&#10;&#10;2:04:20 AM: Executing ':org.MainModule.Window.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Window.main()&#10;Testing the GLFW Lib&#10;LWGL Version:3.3.4+7.&#10;Window Title: Title&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 7s&#10;2 actionable tasks: 2 executed&#10;2:04:27 AM: Execution finished ':org.MainModule.Window.main()'." />
+      <created>1725181839504</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1725181839504</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -211,6 +237,7 @@
     <MESSAGE value="initial commit." />
     <MESSAGE value="initial commit.&#10;-Report: running the build files and all the liberaries are working fine without any problem.&#10;&#10;BUILD SUCCESSFUL in 195ms&#10;2 actionable tasks: 1 executed, 1 up-to-date&#10;3:34:57 PM: Execution finished ':org.MainModule.Main.main()'." />
     <MESSAGE value="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'." />
-    <option name="LAST_COMMIT_MESSAGE" value="initial commit.&#10;-Report: creating the Window.java and it's running with all the needed constructor to add width and hight for the window and the windowTitle.&#10;&#10;6:25:58 PM: Executing ':org.MainModule.Main.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Main.main()&#10;LWGL Version:3.3.4+7.&#10;Window Title: &#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 17s&#10;2 actionable tasks: 2 executed&#10;6:26:15 PM: Execution finished ':org.MainModule.Main.main()'." />
+    <MESSAGE value="initial commit.&#10;-Report: created two classes KeyListener and MouseListener they both work fine the key listener only be tested at that time.&#10;&#10;&#10;2:04:20 AM: Executing ':org.MainModule.Window.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Window.main()&#10;Testing the GLFW Lib&#10;LWGL Version:3.3.4+7.&#10;Window Title: Title&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 7s&#10;2 actionable tasks: 2 executed&#10;2:04:27 AM: Execution finished ':org.MainModule.Window.main()'." />
+    <option name="LAST_COMMIT_MESSAGE" value="initial commit.&#10;-Report: created two classes KeyListener and MouseListener they both work fine the key listener only be tested at that time.&#10;&#10;&#10;2:04:20 AM: Executing ':org.MainModule.Window.main()'...&#10;&#10;&gt; Task :compileJava&#10;&gt; Task :processResources NO-SOURCE&#10;&gt; Task :classes&#10;&#10;&gt; Task :org.MainModule.Window.main()&#10;Testing the GLFW Lib&#10;LWGL Version:3.3.4+7.&#10;Window Title: Title&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;space pressed!!&#10;&#10;Deprecated Gradle features were used in this build, making it incompatible with Gradle 9.0.&#10;&#10;You can use '--warning-mode all' to show the individual deprecation warnings and determine if they come from your own scripts or plugins.&#10;&#10;For more on this, please refer to https://docs.gradle.org/8.8/userguide/command_line_interface.html#sec:command_line_warnings in the Gradle documentation.&#10;&#10;BUILD SUCCESSFUL in 7s&#10;2 actionable tasks: 2 executed&#10;2:04:27 AM: Execution finished ':org.MainModule.Window.main()'." />
   </component>
 </project>

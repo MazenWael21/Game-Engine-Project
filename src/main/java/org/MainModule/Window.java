@@ -4,28 +4,35 @@ import org.KeyEvents.KeyListener;
 import org.lwjgl.Version;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
+import org.util.Time;
 
 import static java.sql.Types.NULL;
+import static org.KeyEvents.KeyListener.setKeyListenerCallBack;
 import static org.MouseEvents.MouseListener.mouseEventsCallBacks;
 import static org.lwjgl.glfw.GLFW.*;
 
 import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
 import static org.lwjgl.opengl.GL11.glClear;
 import static org.lwjgl.opengl.GL11C.glClearColor;
-
+import org.Colors.Colors;
 
 public class Window {
+
     private static Window window;
     private static int windowWidth , windowHight;
     private final static  int  defaultWindowWidth = 800 , defaultWidowHight=600 ;
     private static String windowTitle;
     private long glfwWindowAdress;
-    int swapInterval= 1;   // Enabling V-SYNC
-//singleton impelmentation.
+    int swapInterval= 1;// Enabling V-SYNC
+    int windowRefreshRate =  GLFW_REFRESH_RATE;
+    private static Scene currentScene;
+
+    //singleton impelmentation.
 private  Window(){
     this.windowWidth = defaultWindowWidth;
     this.windowHight = defaultWidowHight;
 }
+
 private Window(int windowWidth,int windowHight){
       setWindowTitle(windowTitle);
       setWindowHight(windowHight);
@@ -139,6 +146,20 @@ private Window(int windowWidth,int windowHight){
      glfwSetErrorCallback(null).free();
     }
 
+    public static void changeScene(int newScene) {
+    switch (newScene){
+        case 0:
+            currentScene = new LevelDeditorScene();
+            //create a new init.
+            break;
+        case 1:
+            currentScene = new LevelScene();
+        default:
+            assert false : "unknown Scene"+newScene;
+            break;
+    }
+    }
+
     private void init(){
         //setup error call back.
         GLFWErrorCallback.createPrint(System.err).set();
@@ -148,7 +169,6 @@ private Window(int windowWidth,int windowHight){
         //SIMPLE WINDOW CONFIGURATION THIS CAN BE EDIT OTHER PART OF THE CODE.
         glfwDefaultWindowHints();
         glfwWindowHint(GLFW_VISIBLE,GLFW_FALSE);
-        glfwWindowHint(GLFW_RESIZABLE,GLFW_TRUE);
         glfwWindowHint(GLFW_MAXIMIZED,GLFW_TRUE);
 
         //intializing window.
@@ -159,7 +179,7 @@ private Window(int windowWidth,int windowHight){
        }
 
         mouseEventsCallBacks();//mouse Call Back it should be here a src code but I decide to put it as a sprite method just for more orgranization.
-         glfwSetKeyCallback(glfwWindowAdress,KeyListener::keyCallback);
+        setKeyListenerCallBack();
         glfwMakeContextCurrent(glfwWindowAdress);
         glfwSwapInterval(swapInterval);
         OpeningGlfwlWindow();
@@ -168,21 +188,32 @@ private Window(int windowWidth,int windowHight){
     private void OpeningGlfwlWindow(){
       glfwShowWindow(glfwWindowAdress);
       GL.createCapabilities();
+        Window.changeScene(0);
     }
 
 
 
     private void loop(){
+     // initializing the time frame of the loop
+      float beginTime = Time.getTimeInSec();
+      float endTime , deltaTime = -1.0f;
+
        while(!glfwWindowShouldClose(glfwWindowAdress)){
            glfwPollEvents();
-           glClearColor(1.0f,0.0f,0.0f,1.0f);
-           glClear(GL_COLOR_BUFFER_BIT);
+
+
+           if(deltaTime>=0) {
+               currentScene.update(deltaTime);
+           }
+
            glfwSwapBuffers(glfwWindowAdress);
 
-           if(KeyListener.isKeyPressed(GLFW_KEY_SPACE)){
-               System.out.println("space pressed!!");
-           }
+           endTime = Time.getTimeInSec();
+           deltaTime = endTime - beginTime; //getting the delta time.
+           beginTime = endTime;
+
        }
+
         terminatingWindow();
     }
 

@@ -1,5 +1,7 @@
 package org.KeyEvents;
 
+import org.MainModule.Window;
+
 import java.util.Arrays;
 
 import static org.lwjgl.glfw.GLFW.*;
@@ -42,6 +44,11 @@ public class KeyListener {
 
         return false;
     }
+
+    public static void setKeyListenerCallBack(){
+        glfwSetKeyCallback(Window.getWindowInstance().getGlfwWindowAdress(),KeyListener::keyCallback);
+    }
+
 
     public static boolean keyBeginPress(int keyCode) {
         if (keyCode <= GLFW_KEY_LAST && keyCode >= 0) {
