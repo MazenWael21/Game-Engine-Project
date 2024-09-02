@@ -1,22 +1,35 @@
 package org.MainModule;
 
-import org.KeyEvents.KeyListener;
+import static java.sql.Types.NULL;
+
+import static org.KeyEvents.KeyListener.setKeyListenerCallBack;
+import static org.MouseEvents.MouseListener.mouseEventsCallBacks;
 import org.lwjgl.Version;
+import static org.lwjgl.glfw.GLFW.GLFW_FALSE;
+import static org.lwjgl.glfw.GLFW.GLFW_MAXIMIZED;
+import static org.lwjgl.glfw.GLFW.GLFW_REFRESH_RATE;
+import static org.lwjgl.glfw.GLFW.GLFW_TRUE;
+import static org.lwjgl.glfw.GLFW.GLFW_VISIBLE;
+import static org.lwjgl.glfw.GLFW.glfwCreateWindow;
+import static org.lwjgl.glfw.GLFW.glfwDefaultWindowHints;
+import static org.lwjgl.glfw.GLFW.glfwDestroyWindow;
+import static org.lwjgl.glfw.GLFW.glfwInit;
+import static org.lwjgl.glfw.GLFW.glfwMakeContextCurrent;
+import static org.lwjgl.glfw.GLFW.glfwPollEvents;
+import static org.lwjgl.glfw.GLFW.glfwSetErrorCallback;
+import static org.lwjgl.glfw.GLFW.glfwShowWindow;
+import static org.lwjgl.glfw.GLFW.glfwSwapBuffers;
+import static org.lwjgl.glfw.GLFW.glfwSwapInterval;
+import static org.lwjgl.glfw.GLFW.glfwTerminate;
+import static org.lwjgl.glfw.GLFW.glfwWindowHint;
+import static org.lwjgl.glfw.GLFW.glfwWindowShouldClose;
 import org.lwjgl.glfw.GLFWErrorCallback;
 import org.lwjgl.opengl.GL;
 import org.util.Time;
 
-import static java.sql.Types.NULL;
-import static org.KeyEvents.KeyListener.setKeyListenerCallBack;
-import static org.MouseEvents.MouseListener.mouseEventsCallBacks;
-import static org.lwjgl.glfw.GLFW.*;
-
-import static org.lwjgl.opengl.GL11.GL_COLOR_BUFFER_BIT;
-import static org.lwjgl.opengl.GL11.glClear;
-import static org.lwjgl.opengl.GL11C.glClearColor;
-import org.Colors.Colors;
 
 public class Window {
+    
 
     private static Window window;
     private static int windowWidth , windowHight;
@@ -188,7 +201,7 @@ private Window(int windowWidth,int windowHight){
     private void OpeningGlfwlWindow(){
       glfwShowWindow(glfwWindowAdress);
       GL.createCapabilities();
-        Window.changeScene(0);
+        Window.changeScene(1);
     }
 
 

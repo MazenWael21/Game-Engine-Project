@@ -1,9 +1,9 @@
 package org.Colors;
 
 public  class Colors {
-//this class must have R G B colors of the current monitor of the game engine and has some sort of
+    //this class must have R G B colors of the current monitor of the game engine and has some sort of
 //control over the colors of the monitor and transperancy.
-private static float red , green , blue;
+    private static float red, green, blue;
 
     public static float getRed() {
         return red;
@@ -28,4 +28,6 @@ private static float red , green , blue;
     public static void setBlue(float blue) {
         Colors.blue = blue;
     }
+
+
 }

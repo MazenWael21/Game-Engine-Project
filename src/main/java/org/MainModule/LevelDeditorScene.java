@@ -1,9 +1,9 @@
 package org.MainModule;
 
+import java.awt.event.KeyEvent;
+
 import org.Colors.Colors;
 import org.KeyEvents.KeyListener;
-
-import java.awt.event.KeyEvent;
 
 public class LevelDeditorScene extends Scene {
      private boolean changingScene =false;
