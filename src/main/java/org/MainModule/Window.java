@@ -218,7 +218,7 @@ private Window(int windowWidth,int windowHight){
            if(deltaTime>=0) {
                currentScene.update(deltaTime);
            }
-
+           
            glfwSwapBuffers(glfwWindowAdress);
 
            endTime = Time.getTimeInSec();
